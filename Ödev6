@@ -1,0 +1,22 @@
+1.SORU: film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
+1.CEVAP: 
+SELECT AVG(rental_rate) 
+FROM film;
+
+2.SORU: film tablosunda bulunan filmlerden kaçtanesi 'C' karekteri ile başlar?
+2.CEVAP: 
+SELECT COUNT(*) 
+FROM film
+WHERE title LIKE 'C%';
+
+3.SORU: film tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?
+3.CEVAP: 
+SELECT MAX(length) 
+FROM film
+WHERE rantel_rate = 0.99;
+
+4.SORU: film tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değer i vardır
+4.CEVAP: 
+SELECT COUNT(DISTINCT replacement_cost ) 
+FROM film
+WHERE length > 150;
