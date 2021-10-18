@@ -18,10 +18,4 @@ payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) s
 Select title,rental_rate,replacement_cost from film
 order by rental_rate, replacement_cost;
 
-4- payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
-4-
-select customer_id, count(customer_id) as val
-from payment
-group by customer_id
-order by val desc;
 
